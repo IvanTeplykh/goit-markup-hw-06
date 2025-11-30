@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+
     <header class="header">
       <div class="container">
         <nav class="nav">
@@ -54,6 +55,11 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn">
+          <svg class="menu-open-icon" width="24" height="24">
+            <use href="./images/icons.svg#meny"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -352,10 +358,9 @@
             <li class="main-fourth-section-li">
               <div class="box">
                 <img
+                  class="box-img"
                   src="./images/Banking_App.jpg"
                   alt="Banking App"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-content">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -371,10 +376,9 @@
             <li class="main-fourth-section-li">
               <div class="box">
                 <img
+                  class="box-img"
                   src="./images/Cashless_Payment.jpg"
                   alt="Cashless Payment"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-content">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -390,10 +394,9 @@
             <li class="main-fourth-section-li">
               <div class="box">
                 <img
+                  class="box-img"
                   src="./images/Meditation_App.jpg"
                   alt="Meditation App"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-content">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -409,10 +412,9 @@
             <li class="main-fourth-section-li">
               <div class="box">
                 <img
+                  class="box-img"
                   src="./images/Taxi_Service.jpg"
                   alt="Taxi Service"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-content">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -428,10 +430,9 @@
             <li class="main-fourth-section-li">
               <div class="box">
                 <img
+                  class="box-img"
                   src="./images/Screen_Illustrations.jpg"
                   alt="Screen Illustrations"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-content">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -447,10 +448,9 @@
             <li class="main-fourth-section-li">
               <div class="box">
                 <img
+                  class="box-img"
                   src="./images/Online_Courses.jpg"
                   alt="Online Courses"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-content">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -526,16 +526,16 @@
         </div>
         <div class="footer-form-container">
           <p class="footer-form-container-p">Subscribe</p>
-          <form class="footer-form">            
-              <label class="footer-mail">
+          <form class="footer-form">
+            <label class="footer-mail">
               <input
                 type="email"
                 name="subscribe-email"
                 class="email-input"
                 placeholder="E-mail"
-              />  
-              </label>   
-              <button class="subscribe-btn" type="submit">
+              />
+            </label>
+            <button class="subscribe-btn" type="submit">
               Subscribe
               <svg width="24" height="24" class="subscribe-btn-svg">
                 <use
@@ -557,9 +557,9 @@
           </svg>
         </button>
         <p class="modal-caption">
-            Leave your contacts and we will call you back
-          </p>
-        <form class="modal-form">          
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form">
           <div class="modal-field">
             <label for="user-name" class="modal-label">Name</label>
             <div class="input-wrap">
@@ -638,5 +638,85 @@
         </form>
       </div>
     </div>
+
+    <div class="modal-mobile-meny">
+      <button type="button" class="modal-close-btn">
+        <svg class="modal-close-btn-svg" width="8" height="8">
+          <use class="icon-close" href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="modal-mobile-content">
+
+        <div class="nav-mobile">
+          <ul class="nav-mobile-ul">
+            <li class="nav_ul_li">
+              <a href="./index.html" class="studio">Studio</a>
+            </li>
+            <li class="nav_ul_li"><a href="" class="studio">Portfolio</a></li>
+            <li class="nav_ul_li"><a href="" class="studio">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="contacts-mobile">
+          <address class="mobile-address">
+            <ul class="mobile-address-ul">
+              <li class="mobile-address-ul-li">
+                <a href="tel:+110001111111" class="mobile-tell">+11 (000) 111-11-11</a>
+              </li>
+              <li class="mobile-address-ul-li">
+                <a href="mailto:info@devstudio.com" class="mobile-mail"
+                  >info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="social-mobile">
+          <ul class="mobile-social-links">
+            <li class="icon-link">
+              <a href="" class="icon-link-a">
+                <svg class="icon-link-svg" width="24" height="24">
+                  <use
+                    class="icon-link-svg-use"
+                    href="./images/icons.svg#icon-instagram-2"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-link">
+              <a href="" class="icon-link-a">
+                <svg class="icon-link-svg" width="24" height="24">
+                  <use
+                    class="icon-link-svg-use"
+                    href="./images/icons.svg#icon-twitter-1"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-link">
+              <a href="" class="icon-link-a">
+                <svg class="icon-link-svg" width="24" height="24">
+                  <use
+                    class="icon-link-svg-use"
+                    href="./images/icons.svg#icon-facebook-1"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-link">
+              <a href="" class="icon-link-a">
+                <svg class="icon-link-svg" width="24" height="24">
+                  <use
+                    class="icon-link-svg-use"
+                    href="./images/icons.svg#icon-linkedin-1"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>
